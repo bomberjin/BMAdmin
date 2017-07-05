@@ -30,4 +30,4 @@ BM Admin 实现前后端分离，方便面对各(ie6)种(ie7)复(ie8)杂的用�
 ### 综合
 BM Admin 遵循Apache license 2.0
 
-![image](https://github.com/bomberjin/BMAdmin/docs/bmadmin.jpg)
+![image](https://github.com/bomberjin/BMAdmin/blob/master/BMADMIN.jpg)
