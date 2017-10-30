@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+
+    <meta charset="utf-8">
+    <title>BmAdmin login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/supersized.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body oncontextmenu="return false">
+
+<div class="page-container">
+    <h1>Welcome to BM Admin</h1>
+    <form action="" method="post">
+        <div>
+            <input type="text" name="username" class="username" placeholder="username" autocomplete="off"/>
+        </div>
+        <div>
+            <input type="password" name="password" class="password" placeholder="password" oncontextmenu="return false" onpaste="return false" />
+        </div>
+        <button id="submit" type="button">登录</button>
+    </form>
+    <div class="connect">
+        <p>In me the tiger sniffs the rose</p>
+        <p style="margin-top:20px;">心有猛虎 细嗅蔷薇</p>
+    </div>
+</div>
+
+<!-- Javascript -->
+<script src="component/jquery1.9.1/jquery.min.js"></script>
+<script src="js/supersized.3.2.7.min.js"></script>
+<script src="js/supersized-init.js"></script>
+<script>
+    $(".btn").click(function(){
+        is_hide();
+    })
+    var u = $("input[name=username]");
+    var p = $("input[name=password]");
+
+
+    window.onload = function()
+    {
+        $(".connect p").eq(0).animate({"left":"0%"}, 600);
+        $(".connect p").eq(1).animate({"left":"0%"}, 400);
+    }
+    function is_hide(){ $(".alert").animate({"top":"-40%"}, 300) }
+    function is_show(){ $(".alert").show().animate({"top":"45%"}, 300) }
+</script>
+</body>
+
+</html>
+
